@@ -1,0 +1,77 @@
+<!-- Sidebar -->
+<div id="sidebar">
+  <div class="inner">
+
+    <!-- Menu -->
+    <a href="index">
+      <section id="banner">
+        <img class="nav-image" src="images/logo.png" alt="" />
+      </section>
+    </a>
+    <nav id="menu">
+      <header class="major">
+        <h2>Menu</h2>
+      </header>
+      <ul>
+        <li><a href="gallery">Gallery</a></li>
+        <li>
+          <span class="opener">History</span>
+          <ul>
+            <li><a href="history">Main History</a></li>
+            <li><a href="history#austin-history">Austin</a></li>
+            <li><a href="history#bv-history">Bazaarvoice</a></li>                        
+          </ul>
+        </li>
+        <li>
+          <span class="opener">Bio</span>
+          <ul>
+            <% Object.keys(bio_info_map).forEach(person => { %>
+              <article class="thumb">
+                <a href="bio-<%=person%>"><li><%=person%></li></a>
+                <!-- <li><a href="bio-<%=name%>"><%= name%></li> -->
+              </article>
+            <% }) %>
+          </ul>
+        </li>
+        <li><a href="faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <!-- Section -->
+    <section>
+      <header class="major">
+        <h3>Upcoming</h3>
+      </header>
+      <div class="mini-posts">
+        <article>
+          <!-- <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a> -->
+          <h4>Practice #1</h4>
+          <p>When: </p><br/>
+          <p>Where: </p><br/>
+        </article>
+        <article>
+          <!-- <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a> -->
+          <h4>Practice #2</h4>
+          <p>When: </p><br/>
+          <p>Where: </p><br/>
+        </article>
+        <article>
+          <!-- <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a> -->
+          <h4>Practice #3</h4>
+          <p>When: </p><br/>
+          <p>Where: </p><br/>
+        </article>
+        <article>
+          <!-- <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a> -->
+          <h4>Practice #4</h4>
+          <p>When: </p><br/>
+          <p>Where: </p><br/>
+        </article>
+        <article>
+          <!-- <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a> -->
+          <h4>Race</h4>
+          <p>When: </p><br/>
+          <p>Where: </p><br/>
+        </article>
+      </div>
+    </section>

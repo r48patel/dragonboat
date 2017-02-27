@@ -1,0 +1,24 @@
+<% include ../partials/header.ejs %>
+
+<!-- Content -->
+<section>
+	<span class="image left"><img src=<%= bio_info['img']%> alt=""></span>
+	<br/>
+	<header class="main">
+		<h1><%=bio_info['name']%> (<%=bio_info['position']%>)</h1>
+	</header>
+
+	<p>Bio Here</p>
+	<% for(var i=0; i<bio_info['qna'].length;i++) { %>
+		<article class="thumb">
+			<h3><%= bio_info['qna'][i]['question']%></h3>
+			<p><%= bio_info['qna'][i]['answer']%></p>
+		</article>
+	<% } %>
+</section>
+
+</div>
+</div>
+
+<% include ../partials/nav.ejs %>
+<% include ../partials/footer.ejs %>
