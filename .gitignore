@@ -40,3 +40,9 @@ jspm_packages
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+#InteliJ
+.idea
+*.iml
+
+*.zip
